@@ -1,0 +1,63 @@
+html,
+body {
+  background: white;
+  font-family: "poppins", sans-serif;
+  color: #fff;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.section {
+  position: relative;
+  background-color: rgb(0, 183, 255);
+}
+
+.item {
+  height: 50px;
+  width: 50px;
+  background-color: green;
+  margin-top: 30px;
+  margin-left: 30px;
+  color: black;
+  font-size: 50px;
+  /* position: absolute; */
+}
+
+.section > .item-4 {
+  left: 50px;
+  bottom: 50px;
+  background-color: hotpink;
+}
+
+.item ~ .item-2,
+.item-3 {
+  background-color: chocolate;
+}
+
+.item-1 + .item-2 {
+  background-color: gray;
+}
+
+.section .item-5 {
+  background-color: orangered;
+}
+
+.item-1 {
+  transform: translate(180px, 60px);
+}
+
+.item-2 {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.item-3 {
+  transform: rotate(90deg);
+}
+
+.item-4 {
+  transform: scale(200%, 200%);
+}
